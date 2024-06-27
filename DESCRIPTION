@@ -1,0 +1,25 @@
+Package: ggtaylor
+Type: Package
+Title: This package provides the geom_taylor() function for generating Taylor diagrams in ggplot2.
+Version: 0.1.0
+Authors@R: 
+    person("David", "LeBauer", , "dlebauer@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-7228-053X"))
+Description: A very simple package that implements geom_taylor() for ggplot2. 
+    This function is used to generate Taylor diagrams, which are a way to 
+    visualize the performance of one or more models or model configurations
+    when compared to observations.
+    Taylor, K. E. (2001), Summarizing multiple aspects of model performance in 
+    a single diagram, J. Geophys. Res., 106(D7), 7183–7192, 
+    [https://doi.org/10.1029/2000JD900719](doi:10.1029/2000JD900719).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    dplyr,
+    ggplot2,
+    grid,
+    tidyr
